@@ -8,6 +8,7 @@ import HomePage from './Pages/Home/HomePage.jsx'
 import TimelinePage from './Pages/Timeline/TimelinePage.jsx'
 import StatsPage from './Pages/Stats/StatsPage.jsx'
 import Details from './Pages/Details/Details.jsx'
+import ErrorPage from './Pages/Error/ErrorPage.jsx'
 
 const router = createBrowserRouter([
   {
@@ -30,7 +31,8 @@ const router = createBrowserRouter([
         path:'/details/:id',
         element:<Details/>
       }
-    ]
+    ],
+    errorElement: <ErrorPage/>
   }
 ])
 
