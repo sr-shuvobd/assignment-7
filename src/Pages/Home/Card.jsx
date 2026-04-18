@@ -1,11 +1,11 @@
-import React, { use } from "react";
+import React, { Suspense, use } from "react";
 import { Link } from "react-router";
 
 const dataPromis = fetch("/frienddata.json").then((res) => res.json());
-console.log(dataPromis);
+
 const Card = () => {
   const AllData = use(dataPromis);
-  console.log(AllData);
+ 
   return (
     <div className="mt-6">
       <h1 className="text-2xl font-bold">Your Friends</h1>

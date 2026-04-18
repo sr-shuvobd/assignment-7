@@ -1,19 +1,20 @@
-import React, { use } from "react";
+import React, { use, useContext } from "react";
 import { FaArchive } from "react-icons/fa";
 import { FaMessage } from "react-icons/fa6";
 import { IoIosVideocam } from "react-icons/io";
 import { IoCall } from "react-icons/io5";
 import { MdDeleteForever, MdNotificationsPaused } from "react-icons/md";
-import { Link } from "react-router";
+
 import { useParams } from "react-router";
+import { Context } from "../../Component/Context/AllContext";
 const dataPromich = fetch("/frienddata.json").then((res) => res.json());
 
 const Details = () => {
   const params = useParams();
-
   const AllData = use(dataPromich);
-
   const data = AllData.find((data) => data.id == params.id);
+
+  const {timelinehandle} = useContext(Context);
 
   return (
     <div className="container mx-auto mt-10 grid grid-cols-1 md:grid-cols-3 grid-rows-3 gap-7">
@@ -22,7 +23,7 @@ const Details = () => {
         <div className="shadow-xl flex flex-col justify-center items-center text-center p-10 rounded-2xl space-y-3">
           <img
             src={data.picture}
-            alt="data.name"
+            alt={data.name}
             className="w-20 h-20 rounded-full object-cover"
           />
           <h1 className="text-xl font-bold">{data.name}</h1>
@@ -39,11 +40,22 @@ const Details = () => {
             ))}
           </div>
           <p>{data.bio}</p>
+          <p>Email: {data.email}</p>
         </div>
         <div className="flex flex-col">
-          <button className="btn mt-5 rounded font-bold bg-white"><MdNotificationsPaused />Snooze 2 weeks</button>
-          <button className="btn mt-5 rounded font-bold bg-white"> <FaArchive />Archive</button>
-          <button className="btn mt-5 rounded font-bold bg-white text-red-500"><MdDeleteForever />Delete</button>
+          <button className="btn mt-5 rounded font-bold bg-white">
+            <MdNotificationsPaused />
+            Snooze 2 weeks
+          </button>
+          <button className="btn mt-5 rounded font-bold bg-white">
+            {" "}
+            <FaArchive />
+            Archive
+          </button>
+          <button className="btn mt-5 rounded font-bold bg-white text-red-500">
+            <MdDeleteForever />
+            Delete
+          </button>
         </div>
       </div>
       {/* card 2 */}
@@ -80,17 +92,20 @@ const Details = () => {
       <div className="shadow col-span-2 rounded-2xl p-3">
         <h1 className="text-xl text-[#244d3fFF] mb-3">Quick Check-In</h1>
         <div className="grid grid-cols-3 gap-7">
-          <button className="text-2xl shadow p-5 flex flex-col items-center rounded-2xl text-[#1f2937]">
+          <button
+            onClick={() => timelinehandle(data,"call")}
+            className="text-2xl shadow p-5 flex flex-col items-center rounded-2xl text-[#1f2937]"
+          >
             <IoCall />
             Call
           </button>
 
-          <button className="text-2xl shadow p-5 flex flex-col items-center rounded-2xl text-[#1f2937]">
+          <button onClick={() => timelinehandle(data,"text")} className="text-2xl shadow p-5 flex flex-col items-center rounded-2xl text-[#1f2937]">
             <FaMessage />
             Text
           </button>
 
-          <button className="text-2xl shadow p-5 flex flex-col items-center rounded-2xl text-[#1f2937]">
+          <button onClick={() => timelinehandle(data,"video")} className="text-2xl shadow p-5 flex flex-col items-center rounded-2xl text-[#1f2937]">
             <IoIosVideocam />
             Video
           </button>
