@@ -7,6 +7,7 @@ import Layout from './Component/layout/Layout.jsx'
 import HomePage from './Pages/Home/HomePage.jsx'
 import TimelinePage from './Pages/Timeline/TimelinePage.jsx'
 import StatsPage from './Pages/Stats/StatsPage.jsx'
+import Details from './Pages/Details/Details.jsx'
 
 const router = createBrowserRouter([
   {
@@ -18,12 +19,16 @@ const router = createBrowserRouter([
         element: <HomePage/>
       },
       {
-        path:'timeline',
+        path:'/timeline',
         element: <TimelinePage/>
       },
       {
-        path:'stats',
+        path:'/stats',
         element: <StatsPage/>
+      },
+      {
+        path:'/details/:id',
+        element:<Details/>
       }
     ]
   }

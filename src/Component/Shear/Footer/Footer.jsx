@@ -4,7 +4,7 @@ import { FaFacebookF, FaInstagram } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <div className="bg-[#1a8862] p-10 text-white text-center flex flex-col justify-center items-center space-y-5">
+    <div className="bg-[#1a8862] p-10 text-white text-center flex flex-col justify-center items-center space-y-5 mt-10">
       <h1 className="md:text-5xl font-bold">KeenKeeper</h1>
       <p className="text-shadow-indigo-50">
         Your personal shelf of meaningful connections. Browse, tend, and nurture
