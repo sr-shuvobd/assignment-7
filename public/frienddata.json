@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "name": "Rahim Uddin",
+    "picture": "https://i.ibb.co.com/gLsZhrnC/3c684708-9776-48ea-bfe9-76461d13d285.webp",
+    "email": "rahim.uddin@gmail.com",
+    "days_since_contact": 18,
+    "status": "overdue",
+    "tags": ["college", "close friend"],
+    "bio": "We studied together in college. Always supportive and fun to hang out with.",
+    "goal": 14,
+    "next_due_date": "2026-04-10"
+  },
+  {
+    "id": 2,
+    "name": "Sadia Akter",
+    "picture": "https://i.ibb.co.com/4wG2m6w8/5e14dcfc-6ab5-4efe-ada8-eac6baf7994f.webp",
+    "email": "sadia.akter@gmail.com",
+    "days_since_contact": 10,
+    "status": "almost due",
+    "tags": ["best friend"],
+    "bio": "Met at university. We share everything and love traveling together.",
+    "goal": 14,
+    "next_due_date": "2026-04-22"
+  },
+  {
+    "id": 3,
+    "name": "Tanvir Hasan",
+    "picture": "https://i.ibb.co.com/r2Ch4WBJ/8a936ebb-7b02-438a-830d-13d2cc73d98d.webp",
+    "email": "tanvir.hasan@gmail.com",
+    "days_since_contact": 5,
+    "status": "on-track",
+    "tags": ["work", "gym buddy"],
+    "bio": "Office colleague and gym partner. Keeps me motivated daily.",
+    "goal": 14,
+    "next_due_date": "2026-04-28"
+  },
+  {
+    "id": 4,
+    "name": "Nusrat Jahan",
+    "picture": "https://i.ibb.co.com/N6QcQc9Z/446f959b-cd7a-41f2-afa0-0f818ab9944e.webp",
+    "email": "nusrat.jahan@gmail.com",
+    "days_since_contact": 20,
+    "status": "overdue",
+    "tags": ["school", "friend"],
+    "bio": "School friend. We used to participate in cultural programs together.",
+    "goal": 14,
+    "next_due_date": "2026-04-08"
+  },
+  {
+    "id": 5,
+    "name": "Imran Hossain",
+    "picture": "https://i.ibb.co.com/1Yx9pjPC/1288a8fe-e2fd-4552-9f5e-a64bdd52e4cd.webp",
+    "email": "imran.hossain@gmail.com",
+    "days_since_contact": 12,
+    "status": "almost due",
+    "tags": ["neighbor", "football"],
+    "bio": "Childhood neighbor. We still play football on weekends.",
+    "goal": 14,
+    "next_due_date": "2026-04-20"
+  },
+  {
+    "id": 6,
+    "name": "Mim Chowdhury",
+    "picture": "https://i.ibb.co.com/7N8jkt23/1437a4ce-30ca-4d39-b4de-d010295c4686.webp",
+    "email": "mim.chowdhury@gmail.com",
+    "days_since_contact": 3,
+    "status": "on-track",
+    "tags": ["university", "project partner"],
+    "bio": "Worked on many university projects together. Very hardworking.",
+    "goal": 14,
+    "next_due_date": "2026-04-30"
+  },
+  {
+    "id": 7,
+    "name": "Arif Mahmud",
+    "picture": "https://i.ibb.co.com/zWcZjykk/23507f3c-5d62-491c-8dfe-5ee4882931b1.webp",
+    "email": "arif.mahmud@gmail.com",
+    "days_since_contact": 16,
+    "status": "overdue",
+    "tags": ["work", "mentor"],
+    "bio": "Senior at work who always guides me in career decisions.",
+    "goal": 14,
+    "next_due_date": "2026-04-12"
+  },
+  {
+    "id": 8,
+    "name": "Jannat Sultana",
+    "picture": "https://i.ibb.co.com/V0MxqBw5/32813d7b-2ce6-412b-9230-d9a9c3f6c25c.webp",
+    "email": "jannat.sultana@gmail.com",
+    "days_since_contact": 7,
+    "status": "on-track",
+    "tags": ["cousin", "family"],
+    "bio": "My cousin. We meet during family gatherings and share stories.",
+    "goal": 14,
+    "next_due_date": "2026-04-25"
+  },
+  {
+    "id": 9,
+    "name": "Sabbir Ahmed",
+    "picture": "https://i.ibb.co.com/Tqxj7d15/5218924c-b585-47f5-9219-a42c5d8e7d8a.webp",
+    "email": "sabbir.ahmed@gmail.com",
+    "days_since_contact": 9,
+    "status": "almost due",
+    "tags": ["college", "gaming"],
+    "bio": "College friend. We love playing online games together.",
+    "goal": 14,
+    "next_due_date": "2026-04-23"
+  },
+  {
+    "id": 10,
+    "name": "Farzana Islam",
+    "picture": "https://i.ibb.co.com/JRYbtgk5/a0f1a5f0-a3ce-451a-bc6b-ad9b340ac532.webp",
+    "email": "farzana.islam@gmail.com",
+    "days_since_contact": 4,
+    "status": "on-track",
+    "tags": ["work", "friend"],
+    "bio": "Colleague from my first job. Very friendly and helpful.",
+    "goal": 14,
+    "next_due_date": "2026-04-29"
+  }
+]
